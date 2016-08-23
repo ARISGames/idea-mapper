@@ -8,8 +8,8 @@ angular.module('thinkingVisually.dropArea', [])
         template:   '<div class="relative inline-block can-upload-bg" ng-click="browseImage()" ng-class="{\'orange-area\': showDropArea()}" ng-drop="canDragImage()" ng-drop-success="onDropSuccess($data, $event)">' +
                         '<input id="file-picker" type="file" ng-hide="true">' +
                         '<div class="absolute top-left">' +
-                            '<img ng-src="assets/img/exclamation_icon.png" ng-hide="showImage()"><br/>' +  
-                            '<span class="upper" ng-hide="showImage()">Drag background here</span>' +
+                            '<img ng-src="assets/img/cloud-upload-2-white.png" ng-hide="showImage()"><br/>' +  
+                            '<span class="upper" ng-hide="showImage()">Or drag background from &#8617;</span>' +
                         '</div>' +
                         '<div class="relative">' +
                             '<img id="displayImg" class="center-block relative" ng-show="showImage()">' + 

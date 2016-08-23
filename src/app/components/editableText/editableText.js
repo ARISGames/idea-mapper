@@ -21,8 +21,8 @@ angular.module('thinkingVisually.editableText', [])
                         '<div class="relative">' +
                             '<textarea readonly class="relative editable-text-input inline-block" ng-hide="canEditText()"></textarea>' +
                             '<div class="relative inline-block can-upload-here" ng-click="browseImage()" ng-class="{\'orange-area\': showDropArea()}" ng-drop="canDragImage()" ng-drop-success="onDropSuccess($data, $event)">' +
-                                '<img class="center-block exclamation-icon" ng-show="showDropArea()" ng-src="assets/img/exclamation_icon.png">' + 
-                                '<span class="upper" ng-show="showDropArea()">Add Picture</span>' +
+                                '<img class="center-block exclamation-icon" ng-show="showDropArea()" ng-src="assets/img/cloud-upload-2-white.png">' + 
+                                '<span class="upper" ng-show="showDropArea()">Or drag from &#8617;</span>' +
                                 '<img id="displayImg" class="displayImg" class="center-block" ng-show="showImage()">' + 
                                 '<div id="svgwrapper"></div>' +
                                 '<img src="assets/img/modal_close_btn.png" class="remove-btn top-right bring-front mini" ng-show="removeImageAllowed()" ng-click="deleteImage(); $event.stopPropagation();">' + 
