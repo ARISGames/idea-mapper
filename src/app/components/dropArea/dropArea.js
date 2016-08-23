@@ -58,7 +58,7 @@ angular.module('thinkingVisually.dropArea', [])
                         printImage.attr('src',fullURL);
                     }
                 } else {
-                    $('#work-area').css("background-image",scope.defaultBg); // default image
+                    $('#work-area').css("background-image",'url('+scope.defaultBg+')'); // default image
                     if(printImage.length>0){
                         printImage.attr('src',scope.defaultBg);
                     }
