@@ -17,14 +17,15 @@ angular.module('thinkingVisually.editableText', [])
                     '</div>' + 
                     '<div id="drop-area">' + 
                         '<span ng-show="showTitle() && !canEditText()" class="title-text relative inline-block"></span>' +
+                        '<input id="file-picker" type="file" ng-hide="true">' +
                         '<div class="relative">' +
                             '<textarea readonly class="relative editable-text-input inline-block" ng-hide="canEditText()"></textarea>' +
-                            '<div class="relative inline-block" ng-class="{\'orange-area\': showDropArea()}" ng-drop="canDragImage()" ng-drop-success="onDropSuccess($data, $event)">' +
+                            '<div class="relative inline-block" ng-click="browseImage()" ng-class="{\'orange-area\': showDropArea()}" ng-drop="canDragImage()" ng-drop-success="onDropSuccess($data, $event)">' +
                                 '<img class="center-block exclamation-icon" ng-show="showDropArea()" ng-src="assets/img/exclamation_icon.png">' + 
                                 '<span class="upper" ng-show="showDropArea()">Add Picture</span>' +
                                 '<img id="displayImg" class="center-block" ng-show="showImage()">' + 
                                 '<div id="svgwrapper"></div>' +
-                                '<img src="assets/img/modal_close_btn.png" class="remove-btn top-right bring-front mini" ng-show="removeImageAllowed()" ng-click="deleteImage()">' + 
+                                '<img src="assets/img/modal_close_btn.png" class="remove-btn top-right bring-front mini" ng-show="removeImageAllowed()" ng-click="deleteImage(); $event.stopPropagation();">' + 
                             '</div>' +
                         '</div>' +
                     '</div>',
@@ -125,7 +126,11 @@ angular.module('thinkingVisually.editableText', [])
 
                 if (model.backgroundImg != null) {
                     element = iElement.find('#displayImg')[0];
-                    element.src = scope.currentImage = 'assets/img/gallery/' + model.backgroundImg;
+                    if (model.backgroundImg.slice(0, 5) === 'data:') {
+                        element.src = scope.currentImage = model.backgroundImg;
+                    } else {
+                        element.src = scope.currentImage = 'assets/img/gallery/' + model.backgroundImg;
+                    }
                     // set mask for venn or cause-effect charts
                     if(scope.checkRequireMask()) {
                         element.setAttribute('style', 'display: none');
@@ -307,6 +312,29 @@ angular.module('thinkingVisually.editableText', [])
                 ngModelController.$setViewValue(model);
                 ngModelController.$render();
             };             
+
+            scope.browseImage = function(){
+                var picker = iElement.find('#file-picker');
+                picker[0].value = null;
+                var fn = function(){
+                    picker[0].removeEventListener('change', fn);
+                    if (picker[0].files.length === 0) return;
+                    var file = picker[0].files[0];
+                    var reader = new FileReader();
+                    reader.addEventListener('load', function(){
+                        $rootScope.$broadcast('dropAssetEvent');
+                        var model = ngModelController.$viewValue;
+                        // TODO eval chart type and node
+                        model.backgroundImg = reader.result;
+                        scope.editMode = false;
+                        ngModelController.$setViewValue(model);
+                        ngModelController.$render();
+                    }, false);
+                    reader.readAsDataURL(file);
+                };
+                picker[0].addEventListener('change', fn);
+                picker.click();
+            };
         }
     };
 });

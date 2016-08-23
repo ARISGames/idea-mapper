@@ -23,7 +23,7 @@ angular.module('thinkingVisually.dropArea', [])
             scope.editMode = false;
             scope.currentImage = null;
             scope.prevImage = null;
-            scope.defaultBg = "url(assets/img/paper2.png)";
+            scope.defaultBg = "assets/img/paper2.png";
             
             scope.canDragImage = function(){
                 return angular.isDefined(scope.draggableMode) && scope.draggableMode;
@@ -47,9 +47,15 @@ angular.module('thinkingVisually.dropArea', [])
                 var backgroundImg = ngModelController.$viewValue;
                 var printImage = $('#print-background-image');
                 if (backgroundImg != null) {
-                    $('#work-area').css("background-image","url(assets/img/gallery/" + backgroundImg + ")");
+                    var fullURL;
+                    if (backgroundImg.slice(0, 5) === 'data:') {
+                        fullURL = backgroundImg;
+                    } else {
+                        fullURL = 'assets/img/gallery/' + backgroundImg;
+                    }
+                    $('#work-area').css("background-image","url(" + fullURL + ")");
                     if(printImage.length>0){
-                        printImage.attr('src','assets/img/gallery/' + backgroundImg);    
+                        printImage.attr('src',fullURL);
                     }
                 } else {
                     $('#work-area').css("background-image",scope.defaultBg); // default image
