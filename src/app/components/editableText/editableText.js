@@ -329,6 +329,7 @@ angular.module('thinkingVisually.editableText', [])
                         scope.editMode = false;
                         ngModelController.$setViewValue(model);
                         ngModelController.$render();
+                        scope.$apply();
                     }, false);
                     reader.readAsDataURL(file);
                 };
