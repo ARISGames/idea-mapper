@@ -7938,6 +7938,10 @@ span {
   left: 1%;
   margin: 0;
 }
+.cause-effect-chart .bg-drop-area .top-left-3col-override {
+  top: 38%;
+  left: 26%;
+}
 .cause-effect-chart .bg-drop-area .orange-area {
   font-size: 1em;
 }

@@ -7,7 +7,7 @@ angular.module('thinkingVisually.dropArea', [])
         require: 'ngModel',
         template:   '<div class="relative inline-block can-upload-bg" ng-click="browseImage()" ng-class="{\'orange-area\': showDropArea()}" ng-drop="canDragImage()" ng-drop-success="onDropSuccess($data, $event)">' +
                         '<input id="file-picker" type="file" ng-hide="true">' +
-                        '<div class="absolute top-left">' +
+                        '<div class="absolute top-left" ng-class="{\'top-left-3col-override\': is3Column()}">' +
                             '<img ng-src="assets/img/cloud-upload-2-white.png" ng-hide="showImage()"><br/>' +  
                             '<span class="upper" ng-hide="showImage()">Or drag background from &#8617;</span>' +
                         '</div>' +
@@ -90,6 +90,10 @@ angular.module('thinkingVisually.dropArea', [])
             scope.showDropArea = function(){
                 var backgroundImg = ngModelController.$viewValue;
                 return backgroundImg == null;
+            };
+
+            scope.is3Column = function(){
+                return $rootScope.currentProject.getChartBoxes() === 3;
             };
 
             scope.browseImage = function(){
