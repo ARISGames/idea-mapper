@@ -1,0 +1,34 @@
+{
+  "examplesList":[
+    {
+      "id": 1,
+      "file": "example1.png",
+      "thumb": "example1-thumb.png"
+    },
+    {
+      "id": 2,
+      "file": "example2.png",
+      "thumb": "example2-thumb.png"
+    },
+    {
+      "id": 3,
+      "file": "example3.png",
+      "thumb": "example3-thumb.png"
+    },
+    {
+      "id": 4,
+      "file": "example4.png",
+      "thumb": "example4-thumb.png"
+    },
+    {
+      "id": 5,
+      "file": "example5.png",
+      "thumb": "example5-thumb.png"
+    },
+    {
+      "id": 6,
+      "file": "example6.png",
+      "thumb": "example6-thumb.png"
+    }
+   ]
+}

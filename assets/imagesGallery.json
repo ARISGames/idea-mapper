@@ -1,0 +1,831 @@
+{
+  "categories":[
+    {
+      "id": 1,
+      "name": "backgrounds",
+      "images": [
+	  {
+          "image": "ScienceLab.png",
+          "thumb": "backgrounds/Side_Panel_Images/ScienceLab.png",
+          "category": "backgrounds"
+        },
+    {
+          "image": "Map.png",
+          "thumb": "backgrounds/Side_Panel_Images/Map.png",
+          "category": "backgrounds"
+        },
+    {
+          "image": "Desk_BG.png",
+          "thumb": "backgrounds/Side_Panel_Images/Desk_BG.png",
+          "category": "backgrounds"
+        },
+	  {
+          "image": "LakeBG.png",
+          "thumb": "backgrounds/Side_Panel_Images/LakeBG.png",
+          "category": "backgrounds"
+        },
+	  {
+          "image": "GreenTextBG.png",
+          "thumb": "backgrounds/Side_Panel_Images/GreenTextBG.png",
+          "category": "backgrounds"
+        },
+	  {
+          "image": "BlueTextBG.png",
+          "thumb": "backgrounds/Side_Panel_Images/BlueTextBG.png",
+          "category": "backgrounds"
+        },
+	  {
+          "image": "GrowingTown.png",
+          "thumb": "backgrounds/Side_Panel_Images/GrowingTown.png",
+          "category": "backgrounds"
+        },
+		{
+          "image": "Baird_Snowy.png",
+          "thumb": "backgrounds/Side_Panel_Images/Baird_Snowy.png",
+          "category": "backgrounds"
+        },
+        {
+          "image": "AssemblyLine.png",
+          "thumb": "backgrounds/Side_Panel_Images/AssemblyLine.png",
+          "category": "backgrounds"
+        },
+        {
+          "image": "Blue_background.png",
+          "thumb": "backgrounds/Side_Panel_Images/Blue_background.png",
+          "category": "backgrounds"
+        },
+        {
+          "image": "5.1Farm.png",
+          "thumb": "backgrounds/Side_Panel_Images/5.1Farm.png",
+          "category": "backgrounds"
+        },
+        {
+          "image": "Forest-background.png",
+          "thumb": "backgrounds/Side_Panel_Images/Forest-background.png",
+          "category": "backgrounds"
+        },
+        {
+          "image": "MildredBrickWall.png",
+          "thumb": "backgrounds/Side_Panel_Images/MildredBrickWall.png",
+          "category": "backgrounds"
+        },
+        {
+          "image": "1-MilwaukeeMap-copy1a.png",
+          "thumb": "backgrounds/Side_Panel_Images/1-MilwaukeeMap-copy1a.png",
+          "category": "backgrounds"
+        },
+        {
+          "image": "psych.png",
+          "thumb": "backgrounds/Side_Panel_Images/psych.png",
+          "category": "backgrounds"
+        },
+        {
+          "image": "SnowTree.png",
+          "thumb": "backgrounds/Side_Panel_Images/SnowTree.jpg",
+          "category": "backgrounds"
+        },
+        {
+          "image": "SnowyMap.png",
+          "thumb": "backgrounds/Side_Panel_Images/SnowyMap.jpg",
+          "category": "backgrounds"
+        },
+        {
+          "image": "Space-background.png",
+          "thumb": "backgrounds/Side_Panel_Images/Space-background.png",
+          "category": "backgrounds"
+        },
+        {
+          "image": "StarsAndSea.png",
+          "thumb": "backgrounds/Side_Panel_Images/StarsAndSea.png",
+          "category": "backgrounds"
+        },
+        {
+          "image": "Yellow-GreenBG.png",
+          "thumb": "backgrounds/Side_Panel_Images/Yellow-GreenBG.png",
+          "category": "backgrounds"
+        }
+      ]
+    },
+
+    {
+      "id": 2,
+      "name": "items",
+      "images": [
+	  {
+          "image": "trophy.png",
+          "thumb": "items/Side_Panel_Images/trophy.png",
+          "category": "items"
+        },
+    {
+          "image": "milkbottles.png",
+          "thumb": "items/Side_Panel_Images/milkbottles.png",
+          "category": "items"
+        },
+    {
+          "image": "Football.png",
+          "thumb": "items/Side_Panel_Images/Football.png",
+          "category": "items"
+        },
+    {
+          "image": "Farm.png",
+          "thumb": "items/Side_Panel_Images/Farm.png",
+          "category": "items"
+        },
+    {
+          "image": "Beakers.png",
+          "thumb": "items/Side_Panel_Images/Beakers.png",
+          "category": "items"
+        },
+    {
+          "image": "BabcockTest.png",
+          "thumb": "items/Side_Panel_Images/BabcockTest.png",
+          "category": "items"
+        },
+    {
+          "image": "Badger.png",
+          "thumb": "items/Side_Panel_Images/Badger.png",
+          "category": "items"
+        },
+		{
+          "image": "Boat.png",
+          "thumb": "items/Side_Panel_Images/Boat.png",
+          "category": "items"
+        },
+		{
+          "image": "Capitol.png",
+          "thumb": "items/Side_Panel_Images/Capitol.png",
+          "category": "items"
+        },
+		{
+          "image": "football.png",
+          "thumb": "items/Side_Panel_Images/football.png",
+          "category": "items"
+        },
+		{
+          "image": "House.png",
+          "thumb": "items/Side_Panel_Images/House.png",
+          "category": "items"
+        },
+		{
+          "image": "Logo.png",
+          "thumb": "items/Side_Panel_Images/Logo.png",
+          "category": "items"
+        },
+		{
+          "image": "NOsign.png",
+          "thumb": "items/Side_Panel_Images/NOsign.png",
+          "category": "items"
+        },
+		{
+          "image": "Police.png",
+          "thumb": "items/Side_Panel_Images/Police.png",
+          "category": "items"
+        },
+		{
+          "image": "Scales.png",
+          "thumb": "items/Side_Panel_Images/Scales.png",
+          "category": "items"
+        },
+	  {
+          "image": "soldSign.png",
+          "thumb": "items/Side_Panel_Images/soldSign.png",
+          "category": "items"
+        },
+		{
+          "image": "Cow.png",
+          "thumb": "items/Side_Panel_Images/Cow.png",
+          "category": "items"
+        },
+		{
+          "image": "Furs.png",
+          "thumb": "items/Side_Panel_Images/Furs.png",
+          "category": "items"
+        },
+		{
+          "image": "MapleLeaf.png",
+          "thumb": "items/Side_Panel_Images/MapleLeaf.png",
+          "category": "items"
+        },
+		{
+          "image": "OpenBook.png",
+          "thumb": "items/Side_Panel_Images/OpenBook.png",
+          "category": "items"
+        },
+		{
+          "image": "PenAndInk.png",
+          "thumb": "items/Side_Panel_Images/PenAndInk.png",
+          "category": "items"
+        },
+		{
+          "image": "TradingPost.png",
+          "thumb": "items/Side_Panel_Images/TradingPost.png",
+          "category": "items"
+        },
+		{
+          "image": "HospitalFinished.png",
+          "thumb": "items/Side_Panel_Images/HospitalFinished.png",
+          "category": "items"
+        },
+		{
+          "image": "Letter.png",
+          "thumb": "items/Side_Panel_Images/Letter.png",
+          "category": "items"
+        },
+        {
+          "image": "4-Cabin.png",
+          "thumb": "items/Side_Panel_Images/4-Cabin.png",
+          "category": "items"
+        },
+		{
+          "image": "Stethoscope-2.png",
+          "thumb": "items/Side_Panel_Images/Stethoscope-2.png",
+          "category": "items"
+        },
+		{
+          "image": "GradCap.png",
+          "thumb": "items/Side_Panel_Images/GradCap.png",
+          "category": "items"
+        },
+		{
+          "image": "penny.png",
+          "thumb": "items/Side_Panel_Images/penny.png",
+          "category": "items"
+        },
+		{
+          "image": "Milk.png",
+          "thumb": "items/Side_Panel_Images/Milk.png",
+          "category": "items"
+        },
+        {
+          "image": "BallotBox.png",
+          "thumb": "items/Side_Panel_Images/BallotBox.png",
+          "category": "items"
+        },
+		{
+          "image": "Megaphone.png",
+          "thumb": "items/Side_Panel_Images/Megaphone.png",
+          "category": "items"
+        },
+        {
+          "image": "Books.png",
+          "thumb": "items/Side_Panel_Images/Books.png",
+          "category": "items"
+        },
+		{
+          "image": "Ballot.png",
+          "thumb": "items/Side_Panel_Images/Ballot.png",
+          "category": "items"
+        },
+        {
+          "image": "Bloomers.png",
+          "thumb": "items/Side_Panel_Images/Bloomers.png",
+          "category": "items"
+        },
+		{
+          "image": "bigdipper.png",
+          "thumb": "items/Side_Panel_Images/bigdipper.png",
+          "category": "items"
+        },
+        {
+          "image": "dog.png",
+          "thumb": "items/Side_Panel_Images/dog.png",
+          "category": "items"
+        },
+		{
+          "image": "Keys.png",
+          "thumb": "items/Side_Panel_Images/Keys.png",
+          "category": "items"
+        },
+		{
+          "image": "Wigwam.png",
+          "thumb": "items/Side_Panel_Images/Wigwam.png",
+          "category": "items"
+        },
+		{
+          "image": "PlanetFromSpace.png",
+          "thumb": "items/Side_Panel_Images/PlanetFromSpace.png",
+          "category": "items"
+        },
+		{
+          "image": "Trees.png",
+          "thumb": "items/Side_Panel_Images/Trees.png",
+          "category": "items"
+        },
+        {
+          "image": "enoughSign.png",
+          "thumb": "items/Side_Panel_Images/enoughSign.png",
+          "category": "items"
+        },
+		{
+          "image": "House.png",
+          "thumb": "items/Side_Panel_Images/House.png",
+          "category": "items"
+        },
+		{
+          "image": "ProtestSign.png",
+          "thumb": "items/Side_Panel_Images/ProtestSign.png",
+          "category": "items"
+        },
+		{
+          "image": "Bridge.png",
+          "thumb": "items/Side_Panel_Images/Bridge.png",
+          "category": "items"
+        },
+		{
+          "image": "Bus.png",
+          "thumb": "items/Side_Panel_Images/Bus.png",
+          "category": "items"
+        },
+        {
+          "image": "flag.png",
+          "thumb": "items/Side_Panel_Images/flag.png",
+          "category": "items"
+        },
+		{
+          "image": "BlueprintBoard.png",
+          "thumb": "items/Side_Panel_Images/BlueprintBoard.png",
+          "category": "items"
+        },
+		{
+          "image": "Motorcycle.png",
+          "thumb": "items/Side_Panel_Images/Motorcycle.png",
+          "category": "items"
+        },
+        {
+          "image": "questionMark.png",
+          "thumb": "items/Side_Panel_Images/questionMark.png",
+          "category": "items"
+        },
+        {
+          "image": "warning.png",
+          "thumb": "items/Side_Panel_Images/warning.png",
+          "category": "items"
+        },
+        {
+          "image": "WiMap.png",
+          "thumb": "items/Side_Panel_Images/WIstate.png",
+          "category": "items"
+        },
+		{
+          "image": "NoBubble.png",
+          "thumb": "items/Side_Panel_Images/NoBubble.png",
+          "category": "items"
+        },
+        {
+          "image": "Bubbles.png",
+          "thumb": "items/Side_Panel_Images/Bubbles.png",
+          "category": "items"
+        },
+        {
+          "image": "confused.png",
+          "thumb": "items/Side_Panel_Images/confused.png",
+          "category": "items"
+        },
+		{
+          "image": "frustrated.png",
+          "thumb": "items/Side_Panel_Images/frustrated.png",
+          "category": "items"
+        },
+		{
+          "image": "happy.png",
+          "thumb": "items/Side_Panel_Images/happy.png",
+          "category": "items"
+        },
+		{
+          "image": "Mad.png",
+          "thumb": "items/Side_Panel_Images/Mad.png",
+          "category": "items"
+        },
+		{
+          "image": "Sad.png",
+          "thumb": "items/Side_Panel_Images/Sad.png",
+          "category": "items"
+        },
+        {
+          "image": "explosion.png",
+          "thumb": "items/Side_Panel_Images/explosion.png",
+          "category": "items"
+        },
+        {
+          "image": "Heart.png",
+          "thumb": "items/Side_Panel_Images/Heart.png",
+          "category": "items"
+        },
+        {
+          "image": "Lightbulb.png",
+          "thumb": "items/Side_Panel_Images/Lightbulb.png",
+          "category": "items"
+        },
+        {
+          "image": "Microphone.png",
+          "thumb": "items/Side_Panel_Images/Microphone.png",
+          "category": "items"
+        },
+        {
+          "image": "MusicNotes.png",
+          "thumb": "items/Side_Panel_Images/MusicNotes.png",
+          "category": "items"
+        },
+        {
+          "image": "NewestThing.png",
+          "thumb": "items/Side_Panel_Images/NewestThing.png",
+          "category": "items"
+        },
+		{
+          "image": "guitar.png",
+          "thumb": "items/Side_Panel_Images/guitar.png",
+          "category": "items"
+        },
+        {
+          "image": "Phonograph.png",
+          "thumb": "items/Side_Panel_Images/Phonograph.png",
+          "category": "items"
+        },
+        {
+          "image": "Record.png",
+          "thumb": "items/Side_Panel_Images/Record.png",
+          "category": "items"
+        },
+        {
+          "image": "Recorder.png",
+          "thumb": "items/Side_Panel_Images/Recorder.png",
+          "category": "items"
+        },
+		{
+          "image": "Note.png",
+          "thumb": "items/Side_Panel_Images/Note.png",
+          "category": "items"
+        },
+		{
+          "image": "EaglePoster.png",
+          "thumb": "items/Side_Panel_Images/EaglePoster.png",
+          "category": "items"
+        },
+        {
+          "image": "ring.png",
+          "thumb": "items/Side_Panel_Images/ring.png",
+          "category": "items"
+        },
+        {
+          "image": "tank.png",
+          "thumb": "items/Side_Panel_Images/tank.png",
+          "category": "items"
+        },
+        {
+          "image": "ThumbsDown.png",
+          "thumb": "items/Side_Panel_Images/ThumbsDown.png",
+          "category": "items"
+        },
+        {
+          "image": "ThumbsUp.png",
+          "thumb": "items/Side_Panel_Images/ThumbsUp.png",
+          "category": "items"
+        }
+
+      ]
+    },
+
+
+    {
+      "id": 3,
+      "name": "events",
+      "images": [
+	  {
+          "image": "Test.png",
+          "thumb": "events/Side_Panel_Images/Test.png",
+          "category": "events"
+        },
+    {
+          "image": "DairySaved.png",
+          "thumb": "events/Side_Panel_Images/DairySaved.png",
+          "category": "events"
+        },
+    {
+          "image": "Closed.png",
+          "thumb": "events/Side_Panel_Images/Closed.png",
+          "category": "events"
+        },
+    {
+          "image": "cheaters.png",
+          "thumb": "events/Side_Panel_Images/cheaters.png",
+          "category": "events"
+        },
+    {
+          "image": "Treaty.png",
+          "thumb": "events/Side_Panel_Images/Treaty.png",
+          "category": "events"
+        },
+		{
+          "image": "eventScale.png",
+          "thumb": "events/Side_Panel_Images/eventScale.png",
+          "category": "events"
+        },
+		{
+          "image": "Boating.png",
+          "thumb": "events/Side_Panel_Images/Boating.png",
+          "category": "events"
+        },
+	  {
+          "image": "TradePost.png",
+          "thumb": "events/Side_Panel_Images/TradePost.png",
+          "category": "events"
+        },
+		{
+          "image": "Land-Deeds.png",
+          "thumb": "events/Side_Panel_Images/Land-Deeds.png",
+          "category": "events"
+        },
+		{
+          "image": "BairdWriting.png",
+          "thumb": "events/Side_Panel_Images/BairdWriting.png",
+          "category": "events"
+        },
+        {
+          "image": "11.png",
+          "thumb": "events/Side_Panel_Images/11.png",
+          "category": "events"
+        },
+        {
+          "image": "14-CountryStagePerformers.png",
+          "thumb": "events/Side_Panel_Images/14-CountryStagePerformers.png",
+          "category": "events"
+        },
+        {
+          "image": "9-LesinGarage.png",
+          "thumb": "events/Side_Panel_Images/9-LesinGarage.png",
+          "category": "events"
+        },
+        {
+          "image": "BelleSpeech.png",
+          "thumb": "events/Side_Panel_Images/BelleSpeech.png",
+          "category": "events"
+        },
+        {
+          "image": "Depression.png",
+          "thumb": "events/Side_Panel_Images/Depression.png",
+          "category": "events"
+        },
+        {
+          "image": "IMG_1815.png",
+          "thumb": "events/Side_Panel_Images/IMG_1815.png",
+          "category": "events"
+        },
+        {
+          "image": "Land-in-Fist.png",
+          "thumb": "events/Side_Panel_Images/Land-in-Fist.png",
+          "category": "events"
+        },
+        {
+          "image": "Magazine.png",
+          "thumb": "events/Side_Panel_Images/Magazine.png",
+          "category": "events"
+        },
+        {
+          "image": "MapofCededLand.png",
+          "thumb": "events/Side_Panel_Images/MapofCededLand.png",
+          "category": "events"
+        },
+        {
+          "image": "MillionPennyParade.png",
+          "thumb": "events/Side_Panel_Images/MillionPennyParade.png",
+          "category": "events"
+        },
+        {
+          "image": "OutOfJail.png",
+          "thumb": "events/Side_Panel_Images/OutOfJail.png",
+          "category": "events"
+        },
+        {
+          "image": "Vel-Elected.png",
+          "thumb": "events/Side_Panel_Images/Vel-Elected.png",
+          "category": "events"
+        },
+        {
+          "image": "in-Jail.png",
+          "thumb": "events/Side_Panel_Images/in-Jail.png",
+          "category": "events"
+        },
+        {
+          "image": "inPrison.png",
+          "thumb": "events/Side_Panel_Images/inPrison.png",
+          "category": "events"
+        },
+        {
+          "image": "inventing.png",
+          "thumb": "events/Side_Panel_Images/inventing.png",
+          "category": "events"
+        },
+        {
+          "image": "kateGraduating.png",
+          "thumb": "events/Side_Panel_Images/kateGraduating.png",
+          "category": "events"
+        },
+        {
+          "image": "marching-2.png",
+          "thumb": "events/Side_Panel_Images/marching-2.png",
+          "category": "events"
+        },
+        {
+          "image": "note.png",
+          "thumb": "events/Side_Panel_Images/note.png",
+          "category": "events"
+        }
+
+      ]
+    },
+
+
+    {
+      "id": 4,
+      "name": "people",
+      "images": [
+	  {
+          "image": "Babcock.png",
+          "thumb": "people/Side_Panel_Images/Babcock.png",
+          "category": "people"
+        },
+    {
+          "image": "Dean.png",
+          "thumb": "people/Side_Panel_Images/Dean.png",
+          "category": "people"
+        },
+    {
+          "image": "SadBoy.png",
+          "thumb": "people/Side_Panel_Images/SadBoy.png",
+          "category": "people"
+        },
+    {
+          "image": "ScienceCows.png",
+          "thumb": "people/Side_Panel_Images/ScienceCows.png",
+          "category": "people"
+        },
+    {
+          "image": "Sylvia.png",
+          "thumb": "people/Side_Panel_Images/Sylvia.png",
+          "category": "people"
+        },
+    {
+          "image": "Bresette.png",
+          "thumb": "people/Side_Panel_Images/Bresette.png",
+          "category": "people"
+        },
+		{
+          "image": "brothers.png",
+          "thumb": "people/Side_Panel_Images/brothers.png",
+          "category": "people"
+        },
+		{
+          "image": "Ghandi.png",
+          "thumb": "people/Side_Panel_Images/Ghandi.png",
+          "category": "people"
+        },
+		{
+          "image": "Judge.png",
+          "thumb": "people/Side_Panel_Images/Judge.png",
+          "category": "people"
+        },
+		{
+          "image": "rosa.png",
+          "thumb": "people/Side_Panel_Images/rosa.png",
+          "category": "people"
+        },
+	  {
+          "image": "Sam.png",
+          "thumb": "people/Side_Panel_Images/Sam.png",
+          "category": "people"
+        },
+		{
+          "image": "HenryBaird.png",
+          "thumb": "people/Side_Panel_Images/HenryBaird.png",
+          "category": "people"
+        },
+		{
+          "image": "BaridAunt.png",
+          "thumb": "people/Side_Panel_Images/BaridAunt.png",
+          "category": "people"
+        },
+        {
+          "image": "3-Vel&amp;James.png",
+          "thumb": "people/Side_Panel_Images/3-Vel&amp;James.png",
+          "category": "people"
+        },
+        {
+          "image": "Archer.png",
+          "thumb": "people/Side_Panel_Images/Archer.png",
+          "category": "people"
+        },
+        {
+          "image": "ArthurDavidson.png",
+          "thumb": "people/Side_Panel_Images/ArthurDavidson.png",
+          "category": "people"
+        },
+        {
+          "image": "arvid.png",
+          "thumb": "people/Side_Panel_Images/arvid.png",
+          "category": "people"
+        },
+        {
+          "image": "BellePodium.png",
+          "thumb": "people/Side_Panel_Images/BellePodium.png",
+          "category": "people"
+        },
+        {
+          "image": "BelleStudying.png",
+          "thumb": "people/Side_Panel_Images/BelleStudying.png",
+          "category": "people"
+        },
+        {
+          "image": "Groppi.png",
+          "thumb": "people/Side_Panel_Images/Groppi.png",
+          "category": "people"
+        },
+        {
+          "image": "Hitler.png",
+          "thumb": "people/Side_Panel_Images/Hitler.png",
+          "category": "people"
+        },
+        {
+          "image": "Joshua&Book.png",
+          "thumb": "people/Side_Panel_Images/Joshua&Book.png",
+          "category": "people"
+        },
+        {
+          "image": "Joshuaworking2.png",
+          "thumb": "people/Side_Panel_Images/Joshuaworking2.png",
+          "category": "people"
+        },
+        {
+          "image": "Kate_Snowshoes.png",
+          "thumb": "people/Side_Panel_Images/Kate_Snowshoes.png",
+          "category": "people"
+        },
+        {
+          "image": "LesGuitar.png",
+          "thumb": "people/Side_Panel_Images/LesGuitar.png",
+          "category": "people"
+        },
+        {
+          "image": "MaryFord.png",
+          "thumb": "people/Side_Panel_Images/MaryFord.png",
+          "category": "people"
+        },
+        {
+          "image": "Mildred.png",
+          "thumb": "people/Side_Panel_Images/Mildred.png",
+          "category": "people"
+        },
+        {
+          "image": "OlderKate.png",
+          "thumb": "people/Side_Panel_Images/OlderKate.png",
+          "category": "people"
+        },
+        {
+          "image": "oskosh.png",
+          "thumb": "people/Side_Panel_Images/oskosh.png",
+          "category": "people"
+        },
+        {
+          "image": "Vel.png",
+          "thumb": "people/Side_Panel_Images/Vel.png",
+          "category": "people"
+        },
+        {
+          "image": "Running.png",
+          "thumb": "people/Side_Panel_Images/Running.png",
+          "category": "people"
+        },
+        {
+          "image": "Belami.png",
+          "thumb": "people/Side_Panel_Images/Belami.png",
+          "category": "people"
+        },
+        {
+          "image": "billHarley.png",
+          "thumb": "people/Side_Panel_Images/billHarley.png",
+          "category": "people"
+        },
+        {
+          "image": "Drummer.png",
+          "thumb": "people/Side_Panel_Images/Drummer.png",
+          "category": "people"
+        },
+        {
+          "image": "Martin_Luther_King,_Jr.png",
+          "thumb": "people/Side_Panel_Images/Martin_Luther_King,_Jr.png",
+          "category": "people"
+        },
+        {
+          "image": "MrNewcomb.png",
+          "thumb": "people/Side_Panel_Images/MrNewcomb.png",
+          "category": "people"
+        },
+        {
+          "image": "Robert.png",
+          "thumb": "people/Side_Panel_Images/Robert.png",
+          "category": "people"
+        }
+
+      ]
+    }    
+  ]
+}

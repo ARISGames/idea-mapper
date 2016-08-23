@@ -1,0 +1,209 @@
+{
+  "chartTypes":[
+    {
+      "id": 1,
+      "type": "organizational",
+      "name": "Web",
+      "defaultBoxesNum": 5,
+      "defaultRows": 2,
+      "defaultSplits": 1,
+      "defaultTitleColor": {"colorName": "Red", "colorCode": "#FF4500"},
+      "defaultBodyColor": {"colorName": "Grey", "colorCode": "#676061"},
+      "icon": "organizational_icon.png",
+      "labels": [
+        {"infoText":"Main Idea"},
+        {"infoText":"Supporting Detail #1"}, 
+        {"infoText":"Supporting Detail #2"}, 
+        {"infoText":"Supporting Detail #3"}, 
+        {"infoText":"Supporting Detail #4"},
+        {"infoText":"Supporting Detail #5"}, 
+        {"infoText":"Supporting Detail #6"} 
+      ],
+      "textComponents": [
+        {"title":"", "infoText":"Main Idea"},
+        {"title":"", "infoText":"Supporting Detail #1"}, 
+        {"title":"", "infoText":"Supporting Detail #2"}, 
+        {"title":"", "infoText":"Supporting Detail #3"}, 
+        {"title":"", "infoText":"Supporting Detail #4"},
+        {"title":"", "infoText":"Supporting Detail #5"},
+        {"title":"", "infoText":"Supporting Detail #6"},
+        {"title":"", "infoText":"Supporting Detail #7"},
+        {"title":"", "infoText":"Supporting Detail #8"},
+        {"title":"", "infoText":"Supporting Detail #9"}
+      ],      
+      "help":[
+        "An idea web shows how details related to each other.",
+        "Put the main idea in the top box. Next add supporting details."
+      ],
+      "menuSelectionHelp":"A web shows how details relate to each other.",
+      "addTextHelp":"Write the main idea. Next add supporting details."
+    },
+    {
+      "id": 2,
+      "type": "topic",
+      "name": "Topic Chart",
+      "defaultBoxesNum": 2,
+      "defaultRows": 0,
+      "defaultSplits": 0,
+      "defaultTitleColor": {"colorName": "Red", "colorCode": "#FF4500"},
+      "defaultBodyColor": {"colorName": "Grey", "colorCode": "#676061"},
+      "icon": "topic_icon.png",
+      "labels": [
+        {"infoText":"Topic"}, 
+        {"infoText":"Supporting Detail #1"}, 
+        {"infoText":"Supporting Detail #2"}, 
+        {"infoText":"Supporting Detail #3"}, 
+        {"infoText":"Supporting Detail #4"}
+      ],
+      "textComponents": [
+        {"title":"", "infoText":"Topic"},
+        {"title":"", "infoText":"Supporting Detail #1"}, 
+        {"title":"", "infoText":"Supporting Detail #2"}, 
+        {"title":"", "infoText":"Supporting Detail #3"}, 
+        {"title":"", "infoText":"Supporting Detail #4"}
+      ],       
+      "help":[
+        "A topic chart shows how details relate to a topic.",
+        "Put the topic in the top box. Next add supporting details."
+      ],
+      "menuSelectionHelp":"A topic chart shows how details relate to a topic.",
+      "addTextHelp":"Write the topic or theme. Next add supporting details."
+    },
+    {
+      "id": 3,
+      "type": "cause-effect",
+      "name": "Cause - Effect",
+      "defaultBoxesNum": 1,
+      "defaultRows": 0,
+      "defaultSplits": 0, 
+      "defaultTitleColor": {"colorName": "Red", "colorCode": "#FF4500"},
+      "defaultBodyColor": {"colorName": "Grey", "colorCode": "#676061"},
+      "icon": "causeeffect_icon.png",
+      "labels": [
+        {"infoText":"Cause #1"},
+        {"infoText":"Effect #1"},
+        {"infoText":"Cause #2"},
+        {"infoText":"Effect #2"},
+        {"infoText":"Cause #3"},
+        {"infoText":"Effect #3"}
+      ],
+      "textComponents": [
+        {"title":"", "infoText":"Cause #1"},
+        {"title":"", "infoText":"Effect #1"}, 
+        {"title":"", "infoText":"Cause #2"},
+        {"title":"", "infoText":"Effect #2"}, 
+        {"title":"", "infoText":"Cause #3"},
+        {"title":"", "infoText":"Effect #3"}
+      ],       
+      "help":[
+        "Cause and effect charts show how an action or event leads to something else.",
+        "Put an event in the box labeled cause. Next, write what happened after the event in the box labeled effect."
+      ],
+      "menuSelectionHelp":"Cause and effect charts show how an action or event leads to something else.",
+      "addTextHelp":"Write an event in the Cause box. Then describe what happened after the event in the Effect box."
+    },
+    {
+      "id": 4,
+      "type": "plot",
+      "name": "Plot Diagram",
+      "defaultBoxesNum": 3,
+      "defaultRows": 0,
+      "defaultSplits": 0,
+      "defaultTitleColor": {"colorName": "Red", "colorCode": "#FF4500"},
+      "defaultBodyColor": {"colorName": "Grey", "colorCode": "#676061"},
+      "icon": "plot_icon.png",
+      "labels": [
+        {"infoText":"Beginning"},
+        {"infoText":"Event"},        
+        {"infoText":"Climax"},
+        {"infoText":"Event"},
+        {"infoText":"End"}
+      ],
+      "textComponents": [
+        {"title":"", "infoText":"Beginning"},
+        {"title":"", "infoText":"Event"}, 
+        {"title":"", "infoText":"Climax"},
+        {"title":"", "infoText":"Event"}, 
+        {"title":"", "infoText":"End"}
+      ],        
+      "help":[
+        "Plot diagrams map the important events of a story.",
+        "Put an event from the beginning of the story in the first box. Next, add the climax, or the turning point of the story. The climax is often the most exciting event. Then add an event from the end of the story, as well as any other important event."
+      ],
+      "menuSelectionHelp":"Plot diagrams map the important events of a story.",
+      "addTextHelp":"Describe an important event in each box. Remember that the climax is the turning point of the story."
+    },
+    {
+      "id": 5,
+      "type": "venn",
+      "name": "Venn Diagram",
+      "defaultBoxesNum": 2,
+      "defaultRows": 0,
+      "defaultSplits": 0,   
+      "defaultTitleColor": {"colorName": "Red", "colorCode": "#FF4500"},
+      "defaultBodyColor": {"colorName": "Grey", "colorCode": "#676061"},
+      "icon": "venn_icon.png",
+      "labels": [
+        {"infoText":"Different"},
+        {"infoText":"Same"},
+        {"infoText":"Different"},
+        {"infoText":"Different"},
+        {"infoText":"Same"},
+        {"infoText":"Same"},
+        {"infoText":"Same"}
+      ],
+      "textComponents": [
+        {"title":"", "infoText":"Different"},
+        {"title":"", "infoText":"Same"}, 
+        {"title":"", "infoText":"Different"},
+        {"title":"", "infoText":"Different"}, 
+        {"title":"", "infoText":"Same"},
+        {"title":"", "infoText":"Same"},
+        {"title":"", "infoText":"Same"}
+      ],             
+      "help":[
+        "Venn diagrams let you compare two or more things to show what is the same and what is different about them.",
+        "Choose two topics or stories. Put the events or ideas that are true for both topics where the circles intersect. Add events or ideas that are different inside the other part of the circles."
+      ],
+      "menuSelectionHelp":"Venn diagrams let you compare two or more things to show what is the same and what is different about them.",
+      "addTextHelp":"Describe what events and ideas are the same and different for each topic."
+    },
+    {
+      "id": 6,
+      "type": "timeline",
+      "name": "Timeline",
+      "defaultBoxesNum": 3,
+      "defaultRows": 0,
+      "defaultSplits": 0, 
+      "defaultTitleColor": {"colorName": "Red", "colorCode": "#FF4500"},
+      "defaultBodyColor": {"colorName": "Grey", "colorCode": "#676061"},
+      "icon": "timeline_icon.png",
+      "labels": [
+        {"infoText":"Event #1"},
+        {"infoText":"Event #2"},
+        {"infoText":"Event #3"},
+        {"infoText":"Event #4"},
+        {"infoText":"Event #5"},
+        {"infoText":"Event #6"},
+        {"infoText":"Event #7"},
+        {"infoText":"Event #8"}
+      ],
+      "textComponents": [
+        {"title":"Date", "infoText":"Event #1"},
+        {"title":"Date", "infoText":"Event #2"},
+        {"title":"Date", "infoText":"Event #3"},
+        {"title":"Date", "infoText":"Event #4"},
+        {"title":"Date", "infoText":"Event #5"},
+        {"title":"Date", "infoText":"Event #6"},
+        {"title":"Date", "infoText":"Event #7"},
+        {"title":"Date", "infoText":"Event #8"}
+      ],                   
+      "help":[
+        "Timelines let you put events in order to see how they are connected over time.",
+        "Chose events and put them in order on the timeline."
+      ],
+      "menuSelectionHelp":"Timelines let you put events in order to see how they are connected over time.",
+      "addTextHelp":"Write the date and describe an event in each box. Make sure the events are in order."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="venn_svg2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="270px" height="127px" viewBox="0 0 270 127" enable-background="new 0 0 270 127" xml:space="preserve">
+	<defs>
+		<filter id="filter1">
+	    	<feGaussianBlur stdDeviation="2"></feGaussianBlur>
+	    </filter>
+	    <mask id="mask2">
+			<path filter="url(#filter1)" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M6.511,18.492h199 c0,0,23.5,41,58,58c0,0-43,31-99,31S42.011,79.492,6.511,18.492z"/>
+		</mask>
+	</defs>
+</svg>
