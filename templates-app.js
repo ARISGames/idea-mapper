@@ -33,7 +33,7 @@ angular.module("charts/cause-effect/cause-effect-workArea.tpl.html", []).run(["$
 angular.module("charts/charts.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("charts/charts.tpl.html",
     "<div class=\"row\">\n" +
-    "	<div id=\"work-area\" class=\"col-sm-9 col-sm-offset-1 paper chart-frame\" ui-view></div>\n" +
+    "	<div id=\"work-area\" class=\"work-area col-sm-9 col-sm-offset-1 paper chart-frame\" ui-view></div>\n" +
     "</div>");
 }]);
 
@@ -467,7 +467,7 @@ angular.module("step1/step1.tpl.html", []).run(["$templateCache", function($temp
     "	      </ul>\n" +
     "	    </div>\n" +
     "	</div>		 \n" +
-    "	<div id=\"work-area\" class=\"col-sm-9 paper animated step1-work-area-animation\" ui-view></div>\n" +
+    "	<div id=\"work-area\" class=\"work-area col-sm-9 paper animated step1-work-area-animation\" ui-view></div>\n" +
     "</div>");
 }]);
 
@@ -524,7 +524,7 @@ angular.module("step2/step2.tpl.html", []).run(["$templateCache", function($temp
     "	    </div>	    \n" +
     "\n" +
     "	</div>		    \n" +
-    "	<div id=\"work-area\" class=\"col-sm-9 paper slide\" ui-view></div>\n" +
+    "	<div id=\"work-area\" class=\"work-area col-sm-9 paper slide\" ui-view></div>\n" +
     "</div>\n" +
     "");
 }]);
@@ -551,7 +551,7 @@ angular.module("step3/step3.tpl.html", []).run(["$templateCache", function($temp
     "			</div>				\n" +
     "	    </div>\n" +
     "	</div>		    \n" +
-    "	<div id=\"work-area\" class=\"col-sm-9 paper slide\" ui-view></div>\n" +
+    "	<div id=\"work-area\" class=\"work-area col-sm-9 paper slide\" ui-view></div>\n" +
     "</div>");
 }]);
 
@@ -579,7 +579,7 @@ angular.module("step4/step4.tpl.html", []).run(["$templateCache", function($temp
     "			</div>\n" +
     "		</div>\n" +
     "	</div>		    \n" +
-    "	<div id=\"work-area\" class=\"col-sm-9 paper slide\" ui-view></div>\n" +
+    "	<div id=\"work-area\" class=\"work-area col-sm-9 paper slide\" ui-view></div>\n" +
     "</div>\n" +
     "");
 }]);
@@ -641,7 +641,7 @@ angular.module("step5/step5.tpl.html", []).run(["$templateCache", function($temp
     "			</div>							\n" +
     "	    </div>\n" +
     "	</div>\n" +
-    "	<div id=\"work-area\" class=\"col-sm-9 paper slide\" ui-view></div>	    \n" +
+    "	<div id=\"work-area\" class=\"work-area col-sm-9 paper slide\" ui-view></div>	    \n" +
     "</div>\n" +
     "<div class=\"waiting-modal\" ng-show=\"savingProcess\"><span>Saving image...</span></div>");
 }]);

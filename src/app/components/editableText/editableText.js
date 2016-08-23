@@ -23,7 +23,7 @@ angular.module('thinkingVisually.editableText', [])
                             '<div class="relative inline-block can-upload-here" ng-click="browseImage()" ng-class="{\'orange-area\': showDropArea()}" ng-drop="canDragImage()" ng-drop-success="onDropSuccess($data, $event)">' +
                                 '<img class="center-block exclamation-icon" ng-show="showDropArea()" ng-src="assets/img/exclamation_icon.png">' + 
                                 '<span class="upper" ng-show="showDropArea()">Add Picture</span>' +
-                                '<img id="displayImg" class="center-block" ng-show="showImage()">' + 
+                                '<img id="displayImg" class="displayImg" class="center-block" ng-show="showImage()">' + 
                                 '<div id="svgwrapper"></div>' +
                                 '<img src="assets/img/modal_close_btn.png" class="remove-btn top-right bring-front mini" ng-show="removeImageAllowed()" ng-click="deleteImage(); $event.stopPropagation();">' + 
                             '</div>' +
@@ -127,17 +127,18 @@ angular.module('thinkingVisually.editableText', [])
                 if (model.backgroundImg != null) {
                     element = iElement.find('#displayImg')[0];
                     if (model.backgroundImg.slice(0, 5) === 'data:') {
-                        element.src = scope.currentImage = model.backgroundImg;
+                        scope.currentImage = model.backgroundImg;
                     } else {
-                        element.src = scope.currentImage = 'assets/img/gallery/' + model.backgroundImg;
+                        scope.currentImage = 'assets/img/gallery/' + model.backgroundImg;
                     }
+                    $(element).css('background-image', 'url(' + scope.currentImage + ')');
                     // set mask for venn or cause-effect charts
                     if(scope.checkRequireMask()) {
                         element.setAttribute('style', 'display: none');
                         var i = setTimeout(scope.initSvgElement, 300);
                     }
                 }else{
-                    element.src = '';
+                    $(element).css('background-image', '');
                 }
             };
 

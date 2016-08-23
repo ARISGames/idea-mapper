@@ -7065,7 +7065,7 @@ span {
   position: absolute;
   right: 0;
   top: 0;
-  width: auto;
+  /*width: auto;*/ /* removed by miketolly@gmail.com */
 }
 .organizational-chart [ng-drop].drag-enter {
   border: 4px #db7800 dashed;
@@ -9421,4 +9421,17 @@ div[color-stepper] .btn-plus {
 
 .text-edit-button {
   pointer-events: auto;
+}
+
+.displayImg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.work-area {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 568px;
 }
