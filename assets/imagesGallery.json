@@ -81,12 +81,12 @@
         },
         {
           "image": "SnowTree.png",
-          "thumb": "backgrounds/Side_Panel_Images/SnowTree.jpg",
+          "thumb": "backgrounds/Side_Panel_Images/SnowTree.png",
           "category": "backgrounds"
         },
         {
           "image": "SnowyMap.png",
-          "thumb": "backgrounds/Side_Panel_Images/SnowyMap.jpg",
+          "thumb": "backgrounds/Side_Panel_Images/SnowyMap.png",
           "category": "backgrounds"
         },
         {
@@ -154,11 +154,6 @@
 		{
           "image": "Capitol.png",
           "thumb": "items/Side_Panel_Images/Capitol.png",
-          "category": "items"
-        },
-		{
-          "image": "football.png",
-          "thumb": "items/Side_Panel_Images/football.png",
           "category": "items"
         },
 		{
@@ -317,11 +312,6 @@
           "category": "items"
         },
 		{
-          "image": "House.png",
-          "thumb": "items/Side_Panel_Images/House.png",
-          "category": "items"
-        },
-		{
           "image": "ProtestSign.png",
           "thumb": "items/Side_Panel_Images/ProtestSign.png",
           "category": "items"
@@ -363,6 +353,11 @@
         },
         {
           "image": "WiMap.png",
+          "thumb": "items/Side_Panel_Images/WiMap.png",
+          "category": "items"
+        },
+        {
+          "image": "WIstate.png",
           "thumb": "items/Side_Panel_Images/WIstate.png",
           "category": "items"
         },
@@ -479,6 +474,11 @@
         {
           "image": "ThumbsUp.png",
           "thumb": "items/Side_Panel_Images/ThumbsUp.png",
+          "category": "items"
+        },
+        {
+          "image": "Cheese.png",
+          "thumb": "items/Side_Panel_Images/Cheese.png",
           "category": "items"
         }
 
@@ -629,6 +629,11 @@
           "image": "note.png",
           "thumb": "events/Side_Panel_Images/note.png",
           "category": "events"
+        },
+        {
+          "image": "Chalkboard.png",
+          "thumb": "events/Side_Panel_Images/Chalkboard.png",
+          "category": "events"
         }
 
       ]
@@ -705,8 +710,8 @@
           "category": "people"
         },
         {
-          "image": "3-Vel&amp;James.png",
-          "thumb": "people/Side_Panel_Images/3-Vel&amp;James.png",
+          "image": "3-VelampJames.png",
+          "thumb": "people/Side_Panel_Images/3-VelampJames.png",
           "category": "people"
         },
         {
@@ -745,8 +750,8 @@
           "category": "people"
         },
         {
-          "image": "Joshua&Book.png",
-          "thumb": "people/Side_Panel_Images/Joshua&Book.png",
+          "image": "JoshuaBook.png",
+          "thumb": "people/Side_Panel_Images/JoshuaBook.png",
           "category": "people"
         },
         {
@@ -822,6 +827,16 @@
         {
           "image": "Robert.png",
           "thumb": "people/Side_Panel_Images/Robert.png",
+          "category": "people"
+        },
+        {
+          "image": "William_S_Harley_The_North_Shore_Bulletin_Dec_1920.png",
+          "thumb": "people/Side_Panel_Images/William_S_Harley_The_North_Shore_Bulletin_Dec_1920.png",
+          "category": "people"
+        },
+        {
+          "image": "YoungBaird.png",
+          "thumb": "people/Side_Panel_Images/YoungBaird.png",
           "category": "people"
         }
 
