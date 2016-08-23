@@ -18,6 +18,10 @@ angular.module( 'thinkingVisually.step5.linkit.modal', [
   };
 
   $scope.openPrintModal = function(){
+    // Browsers other than Firefox inconsistently apply the SVG mask when printing.
+    // But it's not a big deal (images just go over the box boundaries),
+    // so the below check has been disabled.
+    /*
     var chartType = $rootScope.currentProject.chart.chartType.type;
     if(chartType=='venn'||chartType=='cause-effect'){
       var userAgent = window.navigator.userAgent;
@@ -44,6 +48,8 @@ angular.module( 'thinkingVisually.step5.linkit.modal', [
     }else{
       window.print();
     }
+    */
+    window.print();
   };
 
 })
