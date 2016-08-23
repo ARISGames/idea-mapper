@@ -27,6 +27,9 @@
 		// Validate student_val post input
 		$student_val = strlen(filter_var($info->studentName, FILTER_SANITIZE_STRIPPED));
 		$student = str_replace(' ', '-', trim($info->studentName));
+		$student = str_replace('/', '-', $student);
+		$student = str_replace("\\", '-', $student);
+		if ($student === '..') $student = 'nicetry';
 		if ($student_val <= 0) {
 			$student = 'unknown-student';
 		}
@@ -65,4 +68,3 @@
 	{
 		send_response('error', 'Error Uploading File!');
 	}
-?>

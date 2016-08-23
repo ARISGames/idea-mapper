@@ -10,7 +10,7 @@
 
 	function email_address_utf8($email_address)
 	{
-		if (ereg("(.*)<(.*)>", $email_address, $regs)) {
+		if (preg_match("/(.*)<(.*)>/", $email_address, $regs)) {
 		   // There is a name for the expeditor !
 		   $email_address = '=?UTF-8?B?'.base64_encode($regs[1]).'?= <'.$regs[2].'>';
 		} else {
@@ -96,4 +96,3 @@
 	{
 		send_response('error', 'Something wrong!');
 	}
-?>
