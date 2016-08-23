@@ -9403,3 +9403,7 @@ div[color-stepper] .btn-plus {
   width: 85%;
   height: 85%;
 }
+
+.can-upload-here {
+  cursor: pointer;
+}

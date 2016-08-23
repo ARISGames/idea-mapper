@@ -20,7 +20,7 @@ angular.module('thinkingVisually.editableText', [])
                         '<input id="file-picker" type="file" ng-hide="true">' +
                         '<div class="relative">' +
                             '<textarea readonly class="relative editable-text-input inline-block" ng-hide="canEditText()"></textarea>' +
-                            '<div class="relative inline-block" ng-click="browseImage()" ng-class="{\'orange-area\': showDropArea()}" ng-drop="canDragImage()" ng-drop-success="onDropSuccess($data, $event)">' +
+                            '<div class="relative inline-block can-upload-here" ng-click="browseImage()" ng-class="{\'orange-area\': showDropArea()}" ng-drop="canDragImage()" ng-drop-success="onDropSuccess($data, $event)">' +
                                 '<img class="center-block exclamation-icon" ng-show="showDropArea()" ng-src="assets/img/exclamation_icon.png">' + 
                                 '<span class="upper" ng-show="showDropArea()">Add Picture</span>' +
                                 '<img id="displayImg" class="center-block" ng-show="showImage()">' + 
