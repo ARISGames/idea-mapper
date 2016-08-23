@@ -275,6 +275,8 @@ angular.module('thinkingVisually.editableText', [])
                 // chartType comes from the parent component as it might be a saved session
                 switch ( scope.chartType ){
                   case 'cause-effect':
+                    scope.requireMask = $rootScope.currentProject.getChartBoxes() === 1;
+                    break;
                   case 'venn':
                     scope.requireMask = true; 
                     break;
