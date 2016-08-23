@@ -5,14 +5,15 @@ angular.module('thinkingVisually.dropArea', [])
     return {
         restrict: 'AE',
         require: 'ngModel',
-        template:   '<div class="relative inline-block" ng-class="{\'orange-area\': showDropArea()}" ng-drop="canDragImage()" ng-drop-success="onDropSuccess($data, $event)">' +
+        template:   '<div class="relative inline-block can-upload-bg" ng-click="browseImage()" ng-class="{\'orange-area\': showDropArea()}" ng-drop="canDragImage()" ng-drop-success="onDropSuccess($data, $event)">' +
+                        '<input id="file-picker" type="file" ng-hide="true">' +
                         '<div class="absolute top-left">' +
                             '<img ng-src="assets/img/exclamation_icon.png" ng-hide="showImage()"><br/>' +  
                             '<span class="upper" ng-hide="showImage()">Drag background here</span>' +
                         '</div>' +
                         '<div class="relative">' +
                             '<img id="displayImg" class="center-block relative" ng-show="showImage()">' + 
-                            '<img src="assets/img/modal_close_btn.png" class="top-right bring-front mini" ng-show="removeImageAllowed()" ng-click="resetModel()">' + 
+                            '<img src="assets/img/modal_close_btn.png" class="top-right bring-front mini" ng-show="removeImageAllowed()" ng-click="resetModel(); $event.stopPropagation();">' + 
                         '</div>'+
                     '</div>',
         scope: {
@@ -89,6 +90,29 @@ angular.module('thinkingVisually.dropArea', [])
             scope.showDropArea = function(){
                 var backgroundImg = ngModelController.$viewValue;
                 return backgroundImg == null;
+            };
+
+            scope.browseImage = function(){
+                var picker = iElement.find('#file-picker');
+                picker[0].value = null;
+                var fn = function(){
+                    picker[0].removeEventListener('change', fn);
+                    if (picker[0].files.length === 0) return;
+                    var file = picker[0].files[0];
+                    var reader = new FileReader();
+                    reader.addEventListener('load', function(){
+                        scope.editMode = false;
+                        // fix for background reset on step change, might run when start
+                        var imgPath = reader.result;
+                        scope.prevImage = imgPath;
+                        scope.currentImage = imgPath;
+                        scope.updateModel(scope.currentImage);
+                        scope.$apply();
+                    }, false);
+                    reader.readAsDataURL(file);
+                };
+                picker[0].addEventListener('change', fn);
+                picker.click();
             };
 
             /* This event is trigger by editableText when an asset is dropped */

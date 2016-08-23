@@ -9404,6 +9404,21 @@ div[color-stepper] .btn-plus {
   height: 85%;
 }
 
-.can-upload-here {
+/* everything below added by miketolly@gmail.com */
+
+.can-upload-here, .can-upload-bg {
   cursor: pointer;
+  pointer-events: auto;
+}
+
+.step2-work-area-chart {
+  pointer-events: none;
+}
+
+.drop-area {
+  pointer-events: auto;
+}
+
+.text-edit-button {
+  pointer-events: auto;
 }

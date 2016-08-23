@@ -7,7 +7,7 @@ angular.module('thinkingVisually.editableText', [])
         require: 'ngModel',
         template:   '<div class="text-wrapper" ng-show="canEditText()">' +
                         '<input ng-show="showTitle()" class="title-text relative" type="input" placeholder="{{titlePlaceholder}}" ng-blur="changeToNormalMode()">' +
-                        '<div class="relative" ng-click="changeToEditMode()">' +
+                        '<div class="relative text-edit-button" ng-click="changeToEditMode()">' +
                             '<textarea class="relative editable-text-input active-textarea" ng-show="isOnEditMode()" ng-blur="changeToNormalMode()" ng-keyup="checkMaxLength()"></textarea>' +
                             '<div class="absolute text-click-area" ng-hide="isOnEditMode()">' +
                                 '<img class="exclamation-icon" ng-src="assets/img/exclamation_icon.png"><br/>' +
@@ -15,7 +15,7 @@ angular.module('thinkingVisually.editableText', [])
                             '</div>' +
                         '</div>' +
                     '</div>' + 
-                    '<div id="drop-area">' + 
+                    '<div id="drop-area" class="drop-area" ng-click="$event.stopPropagation();">' + 
                         '<span ng-show="showTitle() && !canEditText()" class="title-text relative inline-block"></span>' +
                         '<input id="file-picker" type="file" ng-hide="true">' +
                         '<div class="relative">' +
@@ -322,7 +322,6 @@ angular.module('thinkingVisually.editableText', [])
                     var file = picker[0].files[0];
                     var reader = new FileReader();
                     reader.addEventListener('load', function(){
-                        $rootScope.$broadcast('dropAssetEvent');
                         var model = ngModelController.$viewValue;
                         // TODO eval chart type and node
                         model.backgroundImg = reader.result;
