@@ -194,7 +194,7 @@ th {
   padding: 0;
 }
 @media print {
-  *:not(.displayImg) {
+  *:not(.displayImg):not(#work-area) {
     text-shadow: none !important;
     color: #000 !important;
     background: transparent !important;
@@ -264,7 +264,7 @@ th {
     border: 1px solid #ddd !important;
   }
   .work-area {
-    padding-top: 35px;
+    padding-top: 1px; /* MT: I don't know why this is needed to correctly position the bg image during printing. */
   }
 }
 * {
@@ -6286,10 +6286,6 @@ a.btn.active {
 .modal-result {
   width: 100%;
 }
-#print-background-image {
-  visibility: hidden;
-  position: absolute;
-}
 @media print {
   .main-header,
   .submenu-component-step5,
@@ -6299,9 +6295,6 @@ a.btn.active {
   #work-area {
     width: 780px;
     height: 605px;
-  }
-  #print-background-image {
-    visibility: visible;
   }
 }
 .menu-item {

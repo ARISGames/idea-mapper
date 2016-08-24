@@ -46,7 +46,6 @@ angular.module('thinkingVisually.dropArea', [])
             //Se llama cada vez que se necesita hacer una actualizacion de la vista
             ngModelController.$render = function() {
                 var backgroundImg = ngModelController.$viewValue;
-                var printImage = $('#print-background-image');
                 for (var i = 1; i <= 8; i++) $('#work-area').removeClass('exif-' + i);
                 if (backgroundImg != null) {
                     var fullURL;
@@ -63,14 +62,8 @@ angular.module('thinkingVisually.dropArea', [])
                         })
                     };
                     img.src = fullURL;
-                    if(printImage.length>0){
-                        printImage.attr('src',fullURL);
-                    }
                 } else {
                     $('#work-area').css("background-image",'url('+scope.defaultBg+')'); // default image
-                    if(printImage.length>0){
-                        printImage.attr('src',scope.defaultBg);
-                    }
                 }
             };
 

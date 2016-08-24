@@ -2,7 +2,6 @@ angular.module('templates-app', ['charts/cause-effect/cause-effect-workArea.tpl.
 
 angular.module("charts/cause-effect/cause-effect-workArea.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("charts/cause-effect/cause-effect-workArea.tpl.html",
-    "<img id=\"print-background-image\" class=\"absolute\">\n" +
     "<div>\n" +
     "	<div class=\"cause-effect-chart\">\n" +
     "\n" +
@@ -39,7 +38,6 @@ angular.module("charts/charts.tpl.html", []).run(["$templateCache", function($te
 
 angular.module("charts/organizational/organizational-workArea.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("charts/organizational/organizational-workArea.tpl.html",
-    "<img id=\"print-background-image\" class=\"absolute\">\n" +
     "<div>\n" +
     "	<div class=\"organizational-chart\">\n" +
     "\n" +
@@ -72,7 +70,6 @@ angular.module("charts/organizational/organizational-workArea.tpl.html", []).run
 
 angular.module("charts/plot/plot-workArea.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("charts/plot/plot-workArea.tpl.html",
-    "<img id=\"print-background-image\" class=\"absolute\">\n" +
     "<div>\n" +
     "	<div class=\"plot-chart\">\n" +
     "\n" +
@@ -102,7 +99,6 @@ angular.module("charts/plot/plot-workArea.tpl.html", []).run(["$templateCache", 
 
 angular.module("charts/timeline/timeline-workArea.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("charts/timeline/timeline-workArea.tpl.html",
-    "<img id=\"print-background-image\" class=\"absolute\">\n" +
     "<div>\n" +
     "	<div class=\"timeline-chart\">\n" +
     "\n" +
@@ -133,7 +129,6 @@ angular.module("charts/timeline/timeline-workArea.tpl.html", []).run(["$template
 
 angular.module("charts/topic/topic-workArea.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("charts/topic/topic-workArea.tpl.html",
-    "<img id=\"print-background-image\" class=\"absolute\">\n" +
     "<div>\n" +
     "	<div class=\"topic-chart\">\n" +
     "		\n" +
@@ -165,7 +160,6 @@ angular.module("charts/topic/topic-workArea.tpl.html", []).run(["$templateCache"
 
 angular.module("charts/venn/venn-workArea.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("charts/venn/venn-workArea.tpl.html",
-    "<img id=\"print-background-image\" class=\"absolute\">\n" +
     "<div>\n" +
     "	<div class=\"venn-chart\">\n" +
     "\n" +
