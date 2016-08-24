@@ -194,7 +194,7 @@ th {
   padding: 0;
 }
 @media print {
-  *:not(.displayImg):not(#work-area) {
+  *:not(.displayImg):not(#work-area-bg) {
     text-shadow: none !important;
     color: #000 !important;
     background: transparent !important;
@@ -263,7 +263,7 @@ th {
   .table-bordered td {
     border: 1px solid #ddd !important;
   }
-  .work-area {
+  .work-area-bg {
     padding-top: 1px; /* MT: I don't know why this is needed to correctly position the bg image during printing. */
   }
 }
@@ -6296,6 +6296,10 @@ a.btn.active {
     width: 780px;
     height: 605px;
   }
+  #work-area-bg {
+    width: 765px;
+    height: 568px;
+  }
 }
 .menu-item {
   cursor: pointer;
@@ -9434,6 +9438,15 @@ div[color-stepper] .btn-plus {
   background-repeat: no-repeat;
   background-position: center;
   height: 568px;
+}
+
+#work-area-bg {
+  position: absolute;
+}
+@media screen {
+  #work-area-bg {
+    right: 0;
+  }
 }
 
 /* detect exif-rotated images and apply transform to fix */
