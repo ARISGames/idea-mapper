@@ -47,6 +47,7 @@ angular.module('thinkingVisually.dropArea', [])
             ngModelController.$render = function() {
                 var backgroundImg = ngModelController.$viewValue;
                 var printImage = $('#print-background-image');
+                for (var i = 1; i <= 8; i++) $('#work-area').removeClass('exif-' + i);
                 if (backgroundImg != null) {
                     var fullURL;
                     if (backgroundImg.slice(0, 5) === 'data:') {
@@ -55,6 +56,13 @@ angular.module('thinkingVisually.dropArea', [])
                         fullURL = 'assets/img/gallery/' + backgroundImg;
                     }
                     $('#work-area').css("background-image","url(" + fullURL + ")");
+                    var img = new Image;
+                    img.onload = function(){
+                        EXIF.getData(img, function(){
+                            // $('#work-area').addClass('exif-' + (EXIF.getTag(img, 'Orientation') || 1));
+                        })
+                    };
+                    img.src = fullURL;
                     if(printImage.length>0){
                         printImage.attr('src',fullURL);
                     }

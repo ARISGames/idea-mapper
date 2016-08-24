@@ -124,6 +124,7 @@ angular.module('thinkingVisually.editableText', [])
                 // element.textContent = model.bodyText.replace(/\n/g, '<br />');
                 // element.html(model.bodyText.replace(/\n/g, '<br />'));
 
+                for (var i = 1; i <= 8; i++) $(element).removeClass('exif-' + i);
                 if (model.backgroundImg != null) {
                     element = iElement.find('#displayImg')[0];
                     if (model.backgroundImg.slice(0, 5) === 'data:') {
@@ -132,6 +133,13 @@ angular.module('thinkingVisually.editableText', [])
                         scope.currentImage = 'assets/img/gallery/' + model.backgroundImg;
                     }
                     $(element).css('background-image', 'url(' + scope.currentImage + ')');
+                    var img = new Image;
+                    img.onload = function(){
+                        EXIF.getData(img, function(){
+                            $(element).addClass('exif-' + (EXIF.getTag(img, 'Orientation') || 1));
+                        })
+                    };
+                    img.src = scope.currentImage;
                     // set mask for venn or cause-effect charts
                     if(scope.checkRequireMask()) {
                         element.setAttribute('style', 'display: none');
