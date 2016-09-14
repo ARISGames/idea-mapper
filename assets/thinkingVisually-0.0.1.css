@@ -9448,7 +9448,7 @@ div[color-stepper] .btn-plus {
   position: absolute;
 }
 @media screen {
-  #work-area-bg {
+  #work-area-bg:not(.chart-frame) {
     right: 0;
   }
 }
