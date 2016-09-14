@@ -9453,6 +9453,12 @@ div[color-stepper] .btn-plus {
   }
 }
 
+@media print {
+  .work-area-title-text {
+    margin-top: -60px;
+  }
+}
+
 /* detect exif-rotated images and apply transform to fix */
 
 .exif-1
