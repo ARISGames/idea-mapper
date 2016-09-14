@@ -9427,6 +9427,10 @@ div[color-stepper] .btn-plus {
   pointer-events: auto;
 }
 
+.title-text {
+  pointer-events: auto;
+}
+
 .displayImg {
   background-size: contain;
   background-repeat: no-repeat;
