@@ -12,7 +12,7 @@ angular.module('thinkingVisually.dropArea', [])
                             '<span class="upper" ng-hide="showImage()">Or drag background from &#8617;</span>' +
                         '</div>' +
                         '<div class="relative">' +
-                            '<img id="displayImg" class="center-block relative" ng-show="showImage()">' + 
+                            '<img id="displayImg" src="assets/img/blank.png" class="center-block relative" ng-show="showImage()">' + 
                             '<img src="assets/img/modal_close_btn.png" class="top-right bring-front mini" ng-show="removeImageAllowed()" ng-click="resetModel(); $event.stopPropagation();">' + 
                         '</div>'+
                     '</div>',

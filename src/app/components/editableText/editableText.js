@@ -23,7 +23,7 @@ angular.module('thinkingVisually.editableText', [])
                             '<div class="relative inline-block" ng-click="browseImage()" ng-class="{\'orange-area\': showDropArea(), \'can-upload-here\': onStep4()}" ng-drop="canDragImage()" ng-drop-success="onDropSuccess($data, $event)">' +
                                 '<img class="center-block exclamation-icon" ng-show="showDropArea()" ng-src="assets/img/cloud-upload-2-white.png">' + 
                                 '<span class="upper" ng-show="showDropArea()">Or drag from &#8617;</span>' +
-                                '<img id="displayImg" class="displayImg" class="center-block" ng-show="showImage()">' + 
+                                '<img id="displayImg" src="assets/img/blank.png" class="displayImg" class="center-block" ng-show="showImage()">' + 
                                 '<div id="svgwrapper"></div>' +
                                 '<img src="assets/img/modal_close_btn.png" class="remove-btn top-right bring-front mini" ng-show="removeImageAllowed()" ng-click="deleteImage(); $event.stopPropagation();">' + 
                             '</div>' +
