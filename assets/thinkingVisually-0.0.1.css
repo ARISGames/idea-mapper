@@ -9461,6 +9461,12 @@ div[color-stepper] .btn-plus {
   }
 }
 
+@media print {
+  #work-area-bg, .displayImg {
+    -webkit-print-color-adjust: exact;
+  }
+}
+
 /* detect exif-rotated images and apply transform to fix */
 
 .exif-1
