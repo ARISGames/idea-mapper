@@ -49,6 +49,9 @@ angular.module( 'thinkingVisually.step5.linkit.modal', [
       window.print();
     }
     */
+    if (!(window.navigator.userAgent.match(/chrome/i)) && !(window.navigator.userAgent.match(/safari/i))) {
+      alert('On the next step, make sure "Print Background Images" is checked so that images show up on your printed idea map.');
+    }
     window.print();
   };
 
