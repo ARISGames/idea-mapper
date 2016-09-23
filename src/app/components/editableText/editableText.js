@@ -124,9 +124,9 @@ angular.module('thinkingVisually.editableText', [])
                 // element.textContent = model.bodyText.replace(/\n/g, '<br />');
                 // element.html(model.bodyText.replace(/\n/g, '<br />'));
 
-                for (var i = 1; i <= 8; i++) $(element).removeClass('exif-' + i);
                 if (model.backgroundImg != null) {
                     element = iElement.find('#displayImg')[0];
+                    for (var i = 1; i <= 8; i++) $(element).removeClass('exif-' + i);
                     if (model.backgroundImg.slice(0, 5) === 'data:') {
                         scope.currentImage = model.backgroundImg;
                     } else {
@@ -136,22 +136,23 @@ angular.module('thinkingVisually.editableText', [])
                     var img = new Image;
                     img.onload = function(){
                         EXIF.getData(img, function(){
-                            $(element).addClass('exif-' + (EXIF.getTag(img, 'Orientation') || 1));
+                            var orient = EXIF.getTag(img, 'Orientation') || 1;
+                            $(element).addClass('exif-' + orient);
+                            // set mask for venn or cause-effect charts
+                            if(scope.checkRequireMask()) {
+                                element.setAttribute('style', 'display: none');
+                                var i = setTimeout(function(){ scope.initSvgElement(orient); }, 300);
+                            }
                         })
                     };
                     img.src = scope.currentImage;
-                    // set mask for venn or cause-effect charts
-                    if(scope.checkRequireMask()) {
-                        element.setAttribute('style', 'display: none');
-                        var i = setTimeout(scope.initSvgElement, 300);
-                    }
                 }else{
                     $(element).css('background-image', '');
                 }
             };
 
             /* Called on document load */
-            scope.initSvgElement = function (){
+            scope.initSvgElement = function (orient){
                 // initialize svg element
                 if(scope.svgWrapper === null) {
                     var thisClass = iElement.context.className;
@@ -165,18 +166,19 @@ angular.module('thinkingVisually.editableText', [])
                         scope.svgWrapper.svg();
                     }
                 }
-                scope.loadSvg();
+                scope.loadSvg(orient);
             };
 
             /* Callback after loading external document */ 
-            scope.loadSvgDone = function (svg, error) { 
+            scope.loadSvgDone = function (svg, error, orient) {
                 // set the image size from svg props
-                svg.image(0, 0, svg.width(), svg.height(), scope.currentImage, {mask: scope.svgMask}); 
+                $(svg._svg).find('path').attr('class', 'exif-' + orient);
+                svg.image(0, 0, svg.width(), svg.height(), scope.currentImage, {mask: scope.svgMask, class: 'exif-' + orient}); 
                 //resetSize(svg); 
             };
 
             /* http://keith-wood.name/svg.html */
-            scope.loadSvg = function() { 
+            scope.loadSvg = function(orient) { 
                 // load the mask based on the node type
                 if(scope.svgWrapper !== null){
                     var svgFile = "";
@@ -222,7 +224,7 @@ angular.module('thinkingVisually.editableText', [])
                     if(svgFile !== "") {
                         var svg = scope.svgWrapper.svg('get');
                         svg.load(svgFile, {addTo: false, 
-                            changeSize: true, onLoad: scope.loadSvgDone});
+                            changeSize: true, onLoad: function(svg, error){ scope.loadSvgDone(svg, error, orient); }});
                     } else {
                         var image = iElement.find('#displayImg')[0];
                         image.setAttribute('style', 'display: inherit');
