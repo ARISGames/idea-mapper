@@ -6292,13 +6292,27 @@ a.btn.active {
   a {
     display: none !important;
   }
-  #work-area {
+  #work-area:not(.squash-bg) {
     width: 780px;
     height: 605px;
   }
-  #work-area-bg {
+  #work-area.squash-bg {
+    /* hacks */
+    height: 780px;
+    width: 605px;
+    margin-top: -100px;
+    margin-left: 100px;
+  }
+  #work-area-bg:not(.squash-bg) {
     width: 765px;
     height: 568px;
+  }
+  #work-area-bg.squash-bg {
+    /* hacks */
+    height: 765px;
+    width: 568px;
+    margin-top: -100px;
+    margin-left: 100px;
   }
 }
 .menu-item {
@@ -9468,6 +9482,17 @@ div[color-stepper] .btn-plus {
 }
 
 /* detect exif-rotated images and apply transform to fix */
+
+@media screen {
+  .squash-bg
+  {
+    /* hacks */
+    height: 762px;
+    width: 568px;
+    margin-top: -90px;
+    left: 355px;
+  }
+}
 
 .exif-1
 {

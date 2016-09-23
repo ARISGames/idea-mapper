@@ -46,7 +46,8 @@ angular.module('thinkingVisually.dropArea', [])
             //Se llama cada vez que se necesita hacer una actualizacion de la vista
             ngModelController.$render = function() {
                 var backgroundImg = ngModelController.$viewValue;
-                for (var i = 1; i <= 8; i++) $('#work-area-bg').removeClass('exif-' + i);
+                var bg = $('#work-area-bg');
+                for (var i = 1; i <= 8; i++) bg.removeClass('exif-' + i);
                 if (backgroundImg != null) {
                     var fullURL;
                     if (backgroundImg.slice(0, 5) === 'data:') {
@@ -54,16 +55,22 @@ angular.module('thinkingVisually.dropArea', [])
                     } else {
                         fullURL = 'assets/img/gallery/' + backgroundImg;
                     }
-                    $('#work-area-bg').css("background-image","url(" + fullURL + ")");
+                    bg.css("background-image","url(" + fullURL + ")");
                     var img = new Image;
                     img.onload = function(){
                         EXIF.getData(img, function(){
-                            $('#work-area-bg').addClass('exif-' + (EXIF.getTag(img, 'Orientation') || 1));
+                            var orient = EXIF.getTag(img, 'Orientation') || 1;
+                            bg.addClass('exif-' + orient);
+                            if (orient < 5) {
+                                bg.removeClass('squash-bg');
+                            } else {
+                                bg.addClass('squash-bg');
+                            }
                         })
                     };
                     img.src = fullURL;
                 } else {
-                    $('#work-area-bg').css("background-image",'url('+scope.defaultBg+')'); // default image
+                    bg.css("background-image",'url('+scope.defaultBg+')'); // default image
                 }
             };
 

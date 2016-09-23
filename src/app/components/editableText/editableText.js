@@ -172,7 +172,10 @@ angular.module('thinkingVisually.editableText', [])
             /* Callback after loading external document */ 
             scope.loadSvgDone = function (svg, error, orient) {
                 // set the image size from svg props
-                $(svg._svg).find('path').attr('class', 'exif-' + orient);
+                var mask_orient = orient;
+                if (orient == 6) mask_orient = 8;
+                if (orient == 8) mask_orient = 6;
+                $(svg._svg).find('path').attr('class', 'exif-' + mask_orient);
                 svg.image(0, 0, svg.width(), svg.height(), scope.currentImage, {mask: scope.svgMask, class: 'exif-' + orient}); 
                 //resetSize(svg); 
             };
